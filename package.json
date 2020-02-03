@@ -1,10 +1,9 @@
 {
   "name": "wdio1",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/wdio wdio.conf.js\n"
+    "test": "wdio wdio.conf.js\n"
   },
   "keywords": [],
   "author": "",
@@ -20,5 +19,17 @@
   },
   "dependencies": {
     "chai": "^4.2.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eserbekov/Automation-testing-WDIO.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eserbekov/Automation-testing-WDIO/issues"
+  },
+  "homepage": "https://github.com/eserbekov/Automation-testing-WDIO#readme",
+  "description": ""
 }
