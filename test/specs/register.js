@@ -84,7 +84,7 @@ describe('Register page', () => {
     it('should choose click button', () => {
         const element = $('form button[type="submit"]');
         element.click();
-        browser.pause(1000);
+        browser.pause(2000);
     });
 
 });
@@ -92,9 +92,9 @@ describe('Register page', () => {
 describe('User Login page', () => {
 
     it('should have a correct title User Login', () => {
-        const actual = $('h1').getText();
-        const expected = 'User Login';
-        expect(actual).equal(expected);
+        const actualUser = $('h1').getText();
+        const expectedUser = 'User Login';
+        expect(actualUser).equal(expectedUser);
         browser.pause(1000);
     });
 
@@ -113,11 +113,25 @@ describe('User Login page', () => {
     it('should choose click button Login', () => {
         const element = $('form button[type="submit"]');
         element.click();
-        browser.pause(1000);
+        browser.pause(2000);
     });
 
 
-})
+});
+
+describe('Go to profile page', () => {
+
+    it('should have a correct title profile page', () => {
+        const actual = $('h1').getText();
+        const expected = 'You are a new user';
+        expect(actual).equal(expected);
+        browser.pause(2000);
+    });
+
+
+});
+
+
 
 
         // const expected = 'Submit';
