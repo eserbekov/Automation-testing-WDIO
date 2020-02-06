@@ -62,4 +62,9 @@ const pageConfirmation = {
     h1 : 'You are a new user'
 };
 
-module.exports = {URL_REGISTER, URL_LOGIN, userRegister, pageRegister, pageRegisterSelectors, pageLoginSelectors, userLogin, pageLogin, pageConfirmationSelectors, pageConfirmation};
+const userAdmin = {
+    email : 'admin@test.com',
+    password : '11111'
+};
+
+module.exports = {URL_REGISTER, URL_LOGIN, userAdmin, userRegister, pageRegister, pageRegisterSelectors, pageLoginSelectors, userLogin, pageLogin, pageConfirmationSelectors, pageConfirmation};
