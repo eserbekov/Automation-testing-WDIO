@@ -1,5 +1,6 @@
 const URL_REGISTER = 'https://stage.pasv.us/user/register';
 const URL_LOGIN = 'https://stage.pasv.us/user/login';
+const URL_DAIRY = 'https://stage.pasv.us/diary/create';
 const email = Math.random().toFixed(4) + '@gmail.com';
 
 const userRegister = {
@@ -29,7 +30,7 @@ const pageRegisterSelectors = {
     phoneNumberInput : 'form input[name="phone"]',
     emailInput : 'form input[name="email"]',
     passwordInput : 'form input[name="password"]',
-    abouInput : 'form textarea[name="about"]',
+    aboutInput : 'form textarea[name="about"]',
     goalsInput : 'form textarea[name="goals"]',
     englishLevelInput : 'form select[name="englishLevel"]',
     clickButton : 'form button[type="submit"]'
@@ -67,4 +68,23 @@ const userAdmin = {
     password : '11111'
 };
 
-module.exports = {URL_REGISTER, URL_LOGIN, userAdmin, userRegister, pageRegister, pageRegisterSelectors, pageLoginSelectors, userLogin, pageLogin, pageConfirmationSelectors, pageConfirmation};
+const pageDairy = {
+    h1 : 'Create day report',
+    buttonTextSave : 'Save',
+    morale : '7',
+    hours : '5',
+    howWasYourDay : 'Watched lectures and Eat sleep code repeat'
+};
+
+const pageDairySelectors = {
+    h1 : 'h1',
+    submitButton : 'form button',
+    inputWatchedLectures : 'form input[id="input-3"]',
+    clickButton : 'form button[type="submit"]',
+    inputReadDocumentation :  'form input[id="input-4"]',
+    inputMorale : 'form select[name="morale"]',
+    inputHours : 'form input[name="hours"]',
+    inputHowWasYourDay : 'form textarea[name="description"]'
+};
+
+module.exports = {URL_REGISTER, URL_LOGIN, URL_DAIRY, userAdmin, userRegister, pageRegister, pageRegisterSelectors, pageLoginSelectors, userLogin, pageLogin, pageConfirmationSelectors, pageConfirmation, pageDairy, pageDairySelectors};

@@ -56,7 +56,7 @@ describe('Register page', () => {
     });
 
     it('should fill up about field', () => {
-        const element = $(pageRegisterSelectors.abouInput);
+        const element = $(pageRegisterSelectors.aboutInput);
         element.setValue(userRegister.about);
     });
 
