@@ -1,4 +1,5 @@
 const {expect} = require('chai');
+import {expect} from 'chai'
 const {URL_LOGIN, URL_DAIRY, userAdmin, pageLoginSelectors,pageDairy, pageDairySelectors} = require('./register_data');
 
 describe('User Login page', () => {
