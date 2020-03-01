@@ -64,8 +64,8 @@ const pageConfirmation = {
 };
 
 const userAdmin = {
-  email : 'admin@test.com',
-  password : '11111'
+  email : 'admin@pasv.com',
+  password : 'admin'
 };
 
 const pageDairy = {
