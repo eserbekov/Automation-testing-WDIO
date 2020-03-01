@@ -19,6 +19,14 @@ class LoginPage extends Page {
     return browser.$('//h1');
   }
 
+  login(){
+    this.open();
+    this.email.setValue('admin@test.com');
+    this.password.setValue('11111');
+    this.submitButton.click();
+    browser.pause(3000);
+  }
+
   open(){
     super.open('https://stage.pasv.us/user/login')
     }

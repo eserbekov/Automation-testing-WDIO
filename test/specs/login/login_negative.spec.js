@@ -1,6 +1,6 @@
 import{ expect } from 'chai';
 import LoginPage from "./LoginPage";
-import ProfilePage from "../profile/ProfilePage";
+
 
 describe('LOGIN (negative)', () => {
     it('should open login page', () => {
